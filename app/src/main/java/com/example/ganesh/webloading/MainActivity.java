@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         webView=(WebView)findViewById(R.id.webView);
+        getSupportActionBar().setTitle("Express Pantry");
         if(isNetworkAvailable())
         {
             WebSettings settings = webView.getSettings();
